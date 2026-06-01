@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5e6d3;
+    color: #4b2e1e;
+    transition: 0.4s;
+}
+
+header {
+    background: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+button {
+    background: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5c3a21;
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#comentarioInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+}
+
+#listaComentarios {
+    margin-top: 15px;
+    list-style: none;
+}
+
+#listaComentarios li {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background: #6f4e37;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Tema escuro */
+
+.dark {
+    background: #2c1b12;
+    color: #f5e6d3;
+}
+
+.dark .card,
+.dark #listaComentarios li {
+    background: #4b2e1e;
+    color: white;
+}
